@@ -1,0 +1,488 @@
+/*!
+Theme Name: Library
+Theme URI: http://www.nbe.kg/
+Author: Nursultan Taalaibekov
+Author URI: http://nbe.kg/author/
+Description: Description
+Version: 1.0.0
+Text Domain: library
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+@font-face {
+    font-family: 'opensans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('assets/fonts/opensans.woff');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+}
+
+html,
+body {
+    font-family: 'opensans';
+    font-size: 16px;
+    position: relative;
+ /*    background-color: #2898AF; */
+}
+
+header {
+    width: 95%;
+    padding: 0 2.5%;
+    height: 70px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img,
+.site-info img {
+    height: 40px;
+}
+
+.logo img:last-child,
+.site-info img:last-child {
+    height: 30px;
+}
+
+.top-menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-menu ul li {
+    margin-right: 20px;
+}
+
+.top-menu a {
+    padding: 5px 0;
+    color: #ffc600;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.top-menu a:hover {
+    border-bottom: 2px solid#fff;
+    color: #fff;
+}
+
+.search-block input:first-child {
+    outline: none;
+    font-size: 18px;
+    background-color: #000;
+    color: #f3f3f3;
+    border: none;
+    border-left: 1px solid#fff;
+    padding: 5px 20px;
+}
+
+.search-block input:last-child {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid#fff;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+
+
+/* =============style user container=========== */
+.user-info-container {
+    width: 90%;
+    padding: 2.5%;
+    background-color: ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.user-card {
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    max-height: 100px;
+    box-shadow: 0 0 3px #000;
+    border-radius: 2px;
+}
+
+.user-img {
+    margin-right: 20px;
+    width: 100px;
+}
+
+.user-content li {
+    margin-bottom: 5px;
+}
+
+.user-content a {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ffc600;
+    color: #000;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.news-block h3 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid#000;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.news-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.news-card p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-card img {
+    width: 150px;
+}
+
+.news-card p a {
+    color: #000;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* =============style section book-container============ */
+.book-container {
+    width: 95%;
+    padding: 20px 2.5%;
+}
+
+.book-container h1 {
+    padding-bottom: 10px;
+    padding-left: 50px;
+    color: #ffc600;
+    border-bottom: 2px solid#000;
+    margin-bottom: 24px;
+}
+
+.book-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.book-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    align-items: center;
+    box-shadow:0 0 3px #000;
+    border-radius: 2px;
+}
+
+.book-card img {
+    width: 80% !important;
+    padding: 10%;
+    margin: 0 auto;
+}
+
+.book-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.book-info table {
+    border-spacing: 10px;
+}
+
+.book-info table tr {
+    vertical-align: top;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.book-info table td strong {
+    color: #ffc600;
+}
+
+.book-info table td {
+    color: #000;
+}
+
+.book-info a {
+    display: inline-block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    text-align: center;
+    color: #000;
+    background-color: #ffc600;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+
+
+/* =========== style contact page=========== */
+.contact-container {
+    width: 95%;
+    padding: 2.5%;
+}
+
+.contact-block .wp-block-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.contact-block .wp-block-columns img {
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 15%;
+    height: 250px;
+}
+
+.contact-block .wp-block-columns p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-block h2{
+	text-align: left;
+	color: #ffc600;
+	padding-bottom: 5px;
+    padding-left: 20px;
+    border-bottom: 2px solid#ffc600;
+	margin-top: 30px;
+    margin-bottom: 20px;
+}
+.contact-block>p{
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.contact-block form{
+	display:flex;
+	align-items: center;
+/* 	flex-direction: column; */
+	justify-content: center;
+}
+.contact-block input{
+	margin-right: 40px;
+	padding: 10px 30px;
+	outline: none;
+	background-color: #fff;
+    border: none;
+    box-shadow: 0 0 5px #000;
+	font-size: 20px;
+	border-radius: 30px;
+}
+.contact-block input[type=submit]{
+    color: #000;
+    background-color: #ffc600;
+    border: none;
+    padding: 12px 30px;
+}
+.contact-block textarea{
+    margin-right: 40px;
+    padding: 10px 30px;
+    border:none;
+    box-shadow:  0 0 5px #000;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 25px;
+    font-size: 20px;
+}
+.contact-block input::placeholder,.contact-block textarea::placeholder{
+	color: #000;
+}
+
+.news-block{
+    width: 95%;
+    padding: 2.5%;
+    background-color: #fff;
+}
+.news-post-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid#fff;
+}
+.news-post-card h1{
+    width: 95%;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #ffc600;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    border-bottom: 2px solid#000;
+}
+.news-post-card img{
+    width: 70%;
+}
+.news-post-card p{
+    margin: 20px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+
+
+/* ========== style category========== */
+.category-container{
+    width: 95%;
+    margin: 2.5%;
+}
+.category-container h1{
+    margin-bottom: 20px;
+}
+.genre-cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 30px;
+}
+.genre-cards li{
+    padding: 10px 20px;
+    background-color: #ffc600;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.genre-cards li a{
+    color: #fff;
+    font-weight: bold;
+}
+
+/*===========style profil==========*/
+		.profil-block{
+			border: 2px solid#000;
+			width: 90%;
+			margin: 2.5%;
+			padding: 2.5%;
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			grid-gap: 30px;
+		}
+		.profil-block .img{
+			width: 70%;
+			margin: 0 auto;
+		}
+		.profil-info p{
+	font-size: 18px;
+	font-weight: bold;
+		}
+		.order-container,.order-history{
+			width: 95%;
+			margin: 2.5%;
+			box-shadow: 0 0 5px #000;
+			border-radius: 5px;
+			padding: 20px 0px;
+		}
+		.order-container h1,.order-history h1{
+			font-size:40px;
+			margin-bottom:10px;
+			text-align: center;
+		}
+		.order-card-header{
+			width: 100%;
+			background-color: #595959;
+			color: #fff;
+			display: flex;
+			height: 60px;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.order-card-header li{
+			font-size: 20px;
+		}
+		.order-card ul{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+.order-card ul li{
+	margin:10px 0px;
+}
+		.order-history{
+			width: 95%;
+			margin: 2.5%;
+		}
+
+
+
+
+
+
+/* =========style footer========= */
+footer {
+    width: 95%;
+    padding: 0 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: #000;
+}
+
+.site-info {
+    display: flex;
+    align-items: center;
+}
+
+footer .contact-block h2 {
+    font-size: 20px;
+    color: #ffc600;
+    margin-bottom: 10px;
+}
+
+footer .contact-block p {
+    color: #fff;
+    margin-bottom: 5px;
+}
