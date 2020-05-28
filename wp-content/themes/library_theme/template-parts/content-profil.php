@@ -8,7 +8,7 @@
 		<p>email</p>
 		<p>reading ticket</p>
 		<p>Date</p>
-		<a href="">Выйти</a>
+		<a href="<?php echo wp_logout_url( home_url() ); ?>">Выйти</a>
 	</div>
 </section>
 <section class="order-container">
